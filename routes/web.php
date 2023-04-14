@@ -48,4 +48,5 @@ Route::middleware(['splade'])->group(function () {
     Route::get('/users/{user}',[UserController::class,'show'])->name('user.show');
     Route::get('/users/edit/{user}',[UserController::class,'edit'])->name('user.edit');
     Route::post('/users/update/{user}',[UserController::class,'update'])->name('user.update');
+    Route::get('/users/delete/{user}',[UserController::class,'destroy'])->name('user.delete');
 });

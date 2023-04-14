@@ -4,6 +4,9 @@
             <Link href="/users/edit/{{ $user->id }}" class="font-bold text-indigo-600">
                 Edit
             </Link>
+            <Link confirm href="/users/delete/{{ $user->id }}" class="font-bold ml-4 text-indigo-600">
+                Delete
+            </Link>
         @endcell
     </x-splade-table>
 </div>
