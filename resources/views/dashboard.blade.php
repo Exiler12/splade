@@ -3,7 +3,7 @@
 <x-app-layout>
     <x-slot:header>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            <Link href="/users">{{ __('Users') }}</Link>
         </h2>
     </x-slot>
 
